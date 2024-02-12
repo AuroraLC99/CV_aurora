@@ -1,0 +1,425 @@
+
+body{
+        font-family: 'Montserrat', sans-serif;
+    }
+h1,h2{ font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+/* ENCABEZADO */
+
+.encabezado{
+    background-image: url(https://cdn.pixabay.com/photo/2022/01/26/11/19/river-6968614_1280.png);
+    background-position: 102cm bottom;
+    background-attachment: fixed;
+    color: #768562fe;
+    text-shadow: 0 0 35px #fff;
+    text-align: center;
+    padding: 50px 0 0px;
+}
+
+
+.auroraLopez{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.infoMia{
+    max-width: 700px;
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    background-color: #fee6e39d;
+    box-shadow: 0 0 15px #ffffff5c;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* MENU Y SU DESPLEGABLE */
+
+.desplegable > a{
+    text-decoration: none;
+    color: rgb(113, 133, 97);
+    display: flex;
+
+}
+
+.desplegable{
+    position: fixed;
+    margin-left: 30px;
+    margin-top: 45px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 5px;
+    text-align: left;
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    background-color: rgb(113, 133, 97);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: 5ms;
+    font-size: 30px;
+    margin-left: 30px;
+    z-index: 5;
+}
+
+.menu:hover {
+    box-shadow: 0 0 25px #fff;
+}
+
+/* TITULOS DE TODOS LOS APARTADOS */
+
+.titulo{
+    font-style: italic;
+    color: rgb(113, 133, 97);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo:hover{
+    color: black;
+}
+
+/* DESAROLLO PROFESIONAL */
+.miDesarro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(206, 222, 191, 0.358);;
+}
+
+/* LINEA DE TIEMPO */
+
+.button-56 {
+    margin-left: 20px;
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, 'Montserrat', sans-serif;
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+
+.lineaTiempo {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    width: 500px;
+    max-width: 95vw;
+    height: 100%;
+  }
+  .momento {
+    position: relative;
+    width: 45%;
+    box-sizing: border-box;
+  }
+  .momento:nth-child(even) {
+    left: 55%;
+  }
+
+  .lineaTiempo::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: #637857;
+    left: 50%;
+    height: 100%;
+    border-radius: 10px;
+
+  }
+  .momento::after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 10px);
+    right: calc(-11.11% - 11.5px);
+    height: 20px;
+    width: 20px;
+    background-color: #579257;
+    border-radius: 50%;
+  }
+  .momento:nth-child(even)::after {
+    left: calc(-11.11% - 8.5px);
+  }
+
+  .momento h3 {
+    margin: 10px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .momento .descripcion {
+    background-color: #b2c7b1c8;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 22px;
+    font-size: 14px;
+  }
+  .momento .descripcion::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: calc(50% + 10px);
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid #b2c7b1c8;
+  }
+  .momento:nth-child(even) .descripcion {
+    background-color: #33542d96;
+    color: rgb(255, 255, 255);
+  }
+  .momento:nth-child(even) .descripcion::after{
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #33542d96;
+    border-left: none;
+  }
+  
+/* APARTADO DE EXPERIENCIA LABORAL */
+
+.experienciaLaboral{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 50px 0 100px;
+    text-align:justify
+}
+
+.trabajos{
+    color: #2b302a;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px
+
+}
+
+/* APARTADO DE DATOS ACADÉMICOS */
+
+.datosAcademicos{
+    padding: 50px 0 100px;
+    text-align:justify
+}
+
+.estudios{
+    color: #2b302a;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px
+}
+
+.enlace > a{
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #2b302a;
+    
+}
+
+/* APARTADO DE SKILLS DIGITALES */
+
+.skillsDigitales{
+    padding: 50px 0 100px;
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.habilidades{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.colum{
+    width: 50%;
+    text-align: left;
+}
+
+.cont-barra{
+    display: flex;
+    align-items: center;
+}
+
+.barra{
+    display: flex;
+    border-style: solid;
+    border-color: rgb(113, 133, 97);
+    border-width: 2px;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.e{
+    background-color: rgba(0, 0, 0, 0.525);
+    width: 200px;
+    height: 30px;
+    margin-right: 1px;
+}
+
+.e .relleno{
+    background-color: #ffdedacb;
+    height: 30px;
+    margin-right: 1px;
+    border-radius: 3px;
+}
+
+/* APARTADO DE INFORMACIÓN ADICIONAL */
+.informacionAdicional{
+    background-color: rgba(206, 222, 191, 0.358);
+    padding: 50px 0 100px;
+    text-align: center;
+    color: #2b302a;
+
+}
+
+.adicional{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+
+.sub > ul{
+    max-width: 700px;
+    margin: auto;
+    width: 50%;
+    text-align: justify;
+
+}
+
+.sub > i{
+    font-size: 30px;
+    display:inline-block;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+
+
+}
+
+
+
+/* APARTADO DE CONTACTO */
+
+.contacto{
+    background-color: #2b302a;
+    padding: 50px 0px 100px;
+    color: #d0d6c8;
+    text-align: center;
+}
+
+.cont{
+    font-weight: bolder;
+}
+.medios{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.redes{
+    display: flex;
+    justify-content:space-evenly
+}
+
+.red{
+    display: flex;
+    gap: 65px;
+}
+.red > a{
+
+    cursor: pointer;
+    transition: 5ms;
+    font-size: 1cm;
+    color: #d0d6c8;
+}
+
+.red > a:hover{
+    color: #fee6e3;
+
+}
+
+
+
+
+
+
+
+
